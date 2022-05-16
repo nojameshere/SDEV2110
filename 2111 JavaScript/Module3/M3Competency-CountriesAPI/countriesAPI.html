@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries API</title>
+    <link rel="stylesheet" href="countriesAPI.css">
+</head>
+<body>
+    <h1>About Countries</h1>
+    <p>Enter Request</p>
+    <form>
+        <input type="text" class="search"><br><br>
+        <input type="radio" name="choice" value="info" id="info">
+        <label for="info">Get info about a country (ex: Bermuda)</label><br>
+        <input type="radio" name="choice" value="list" id="list">
+        <label for="list">List all countries in a region (ex: Americas)</label><br>
+        <input type="radio" name="choice" value="domain" id="domain">
+        <label for="domain">Find country with given top level domain (ex: ly)</label><br>
+    </form>
+    <div class="results">
+    
+    </div>
+
+    <script src="countriesAPI.js"></script>
+</body>
+</html>

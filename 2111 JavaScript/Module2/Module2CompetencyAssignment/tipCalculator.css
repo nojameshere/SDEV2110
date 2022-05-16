@@ -1,0 +1,35 @@
+body{
+    background: #eee;
+
+}
+
+.success{
+    border: 2px solid limegreen;
+    background: lightgreen;
+}
+
+.failure{
+    border: 2px solid crimson;
+    background: pink;
+}
+
+form{
+    max-width: 600px;
+    background: white;
+    padding: 10px;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+input{
+    display: inline-block; /* This specific style took me an unholy amount of time to figure out */
+    padding: 4px;
+    margin-top: 15px;
+}
+
+.feedback{
+    font-size: x-large;
+    text-align: center;
+}

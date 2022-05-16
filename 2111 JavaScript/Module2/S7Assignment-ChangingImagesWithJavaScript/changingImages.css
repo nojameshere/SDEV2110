@@ -1,0 +1,13 @@
+.lightbulb{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.pumpkin{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+img{
+    max-height: 220px;
+}

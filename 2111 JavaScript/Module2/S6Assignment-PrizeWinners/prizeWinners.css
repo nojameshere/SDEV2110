@@ -1,0 +1,22 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FCD8D3;
+    color: #FD0D40;
+}
+
+p{
+    color:midnightblue;
+}
+
+ul{
+    color: #FA9B3B;
+}
+
+#peopleWinner{
+    color:blue;
+    font-weight: 650;
+}
+
+#prizeWinner{
+    color:mediumslateblue;
+}

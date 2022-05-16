@@ -1,0 +1,1 @@
+alert('External JS alert embeded in the body');

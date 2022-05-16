@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+section{
+    float: left;
+    width: 33%;
+}
+
+#standardSection{
+    color: blue;
+    background-color: lightblue;
+}
+
+#europeanSection{
+    color: red;
+    background-color: lightpink;
+}
+
+#militarySection{
+    color: darkgreen;
+    background-color: lightgreen;
+}

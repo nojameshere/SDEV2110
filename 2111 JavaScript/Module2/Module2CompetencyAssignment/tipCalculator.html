@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tipCalculator.css">
+</head>
+
+<body>
+
+    <div class="conatiner">
+        <form class="tip">
+            <h1>Tip Calculator</h1>
+            <!-- This is the user entry portion. -->
+            <input type="text" id="name" placeholder="Your Name" autocomplete="off"><label class="nError"></label><br>
+            <input type="password" id="password" placeholder="Password" autocomplete="off"><label class="pError"></label><br>
+            <input type="text" id="cost" placeholder="Cost of meal" autocomplete="off"><label
+                class="cError"></label><br>
+            <!-- This is the radial button portion. -->
+            <div class="radials">
+                <p class="qos">Quality of Service</p>
+                <div class="form-check">
+                    <input type="radio" name="qos" value="15" checked>
+                    <label>OK (15% tip)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="qos" value="18">
+                    <label>Good (18% tip)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="qos" value="20">
+                    <label>Very Good (20% tip)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="qos" value="22">
+                    <label>Excellent (22% tip)</label>
+                </div>
+            </div>
+            <input type="submit" value="submit">
+            <!-- Place for the total breakdown to go -->
+            <div class="feedback">
+                <p class="mealCost"></p>
+                <p class="tipAmount"></p>
+                <p class="totalBill"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="tipCalculator.js"></script>
+</body>
+
+</html>
