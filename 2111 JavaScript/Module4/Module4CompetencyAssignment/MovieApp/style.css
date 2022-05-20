@@ -1,0 +1,13 @@
+body{
+    background: lightsalmon;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1,h2,h3{
+    color: brown;
+}
+input{
+    border: 15px;
+    margin-top: 10px;
+}

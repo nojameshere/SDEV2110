@@ -1,0 +1,20 @@
+div{
+    margin-top: 20px;
+}
+body{
+    text-align: center;
+    background: antiquewhite;
+}
+button{
+    height: 75px;
+    width: 250px;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    margin-top: 5%;
+}
