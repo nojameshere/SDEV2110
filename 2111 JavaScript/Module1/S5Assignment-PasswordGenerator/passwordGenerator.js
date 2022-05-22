@@ -19,7 +19,7 @@ function pullCharacter(array){
     return array[getRandomInt(0, max)];
 }
 //loop iterates for however many times the passwordLength is on line 22
-for (let passwordLength = 24; passwordLength > 0; passwordLength --){
+for (let passwordLength = 18; passwordLength > 0; passwordLength --){
     let arrayNumber = getRandomInt(0,4);
     switch (arrayNumber){
         case 0:
