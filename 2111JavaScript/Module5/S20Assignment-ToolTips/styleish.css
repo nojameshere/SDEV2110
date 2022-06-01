@@ -1,0 +1,20 @@
+body{
+    background-color: beige;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*This font is terrible, makes the screen look squished. But its just bad enough to have me not entirely hate it*/
+}
+#tips{
+    background-color: #DDDDDD;
+    color: blue;
+}
+.output{
+    position: absolute;
+    display: none;
+    border: red solid 1px;
+    border-radius: 10px;
+    background-color: #6E6E6E;
+    color: white;
+    padding: 5px;
+    left: 50px;
+}
