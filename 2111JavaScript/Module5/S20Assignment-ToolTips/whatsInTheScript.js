@@ -1,49 +1,29 @@
-// class Tooltip {
-//     constructor(element){
-//         this.element = element;
-//         this.message = element.getAttribute('data-message')
-//     }
-//     init(){
-//         const tip = document.createElement('div');
-//         tip.classList.add('tip');
-//         tip.textContent = this.message;
-//         this.element.appendChiled(tip);
+const tooltips = document.querySelector('.tooltips');
 
-//         this.element.addEventListener('mouseenter', () => {
-//             tip.classList.add('active');
-//         });
-//         this.element.addEventListener('mouseleave', () => {
-//             tip.classList.remove('active');
-//         });
-//     }
-// }
 const tipArray = {
     0: 'Course SDEV 2111',
     1: 'Language for creating interactive web sites',
     2: 'MDN website, https://developer.mozilla.org/en-US/',
     3: 'MDN website'
+};
+
+tooltips.addEventListener('mouseover', e => {
+    if(e.target.className === 'tips'){ 
+        let tipNumber = e.target.dataset.tipnumber;
+        const tip = document.createElement('div');
+        tip.classList.add('output');
+        tip.textContent = tipArray[tipNumber];
+        tip.style.display = 'block';
+        tip.style.top = e.clientY + 5 + "px";
+        tip.style.left = e.clientX + 5 + "px";
+        e.target.appendChild(tip);
+        setInterval(removeOutput,3000);
+    }
+});
+const removeOutput = () => {
+    const outputs = document.querySelectorAll('.output');
+    outputs.forEach(output => output.style.display = 'none');
 }
-
-// const tooltip = new Tooltip(document.querySelector('div'));
-
-// tooltip.init();
-
-const pTags = document.querySelector('.tooltips');
-
-pTags.addEventListener('mouseout', e => {
-    if(e.target.classList.contains('output')){
-    e.target.style.display = 'none';
-    }
-})
-
-pTags.addEventListener('mouseover', e => {
-    if(e.target.classList.contains('0')){
-    console.log('shit is 0');
-    }else if(e.target.classList.contains('1')){
-        console.log('shit is 1');
-    }else if(e.target.classList.contains('2')){
-        console.log('looks like 2');
-    }else if(e.target.classList.contains('3')){
-        console.log('tahree');
-    }
-})
+tooltips.addEventListener('mouseleave', () => {
+    removeOutput();
+});

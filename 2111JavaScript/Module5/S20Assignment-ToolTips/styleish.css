@@ -4,7 +4,7 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /*This font is terrible, makes the screen look squished. But its just bad enough to have me not entirely hate it*/
 }
-#tips{
+.tips{
     background-color: #DDDDDD;
     color: blue;
 }
