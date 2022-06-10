@@ -1,0 +1,35 @@
+.dropdown .trigger{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown .trigger::after{
+    content: ">";
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    transform: rotate(90deg) scale(0.5, 1);
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.dropdown .trigger.active::after{
+    transform: rotate(-90deg) scale(0.5, 1);
+}
+.trigger{
+    font-size: large;
+    font-weight: 600;
+    color:darkcyan;
+}
+.dropdown .content{
+    display: none;
+}
+.dropdown .content.active{
+    display: block;
+}
+body{
+    background-color: antiquewhite;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+}
