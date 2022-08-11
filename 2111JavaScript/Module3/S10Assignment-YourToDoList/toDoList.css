@@ -2,14 +2,19 @@ body{
     background: #8CD0F6;
 }
 .container{
+<<<<<<< HEAD
+    max-width: 399px;
+=======
     max-width: 400px;
+    background-color: #8cdefa;
+>>>>>>> CSS
 }
 input[type=text],
 input[type=text]:focus{
-    color: #fff;
+    color: #aaa;
     border: none;
     background: rgba(0,0,0,0.2);
-    max-width: 400px;
+    max-width: 425px;
 }
 .todos li{
     background: #667075;
